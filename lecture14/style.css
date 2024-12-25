@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+p {
+    font-family: "Playwrite AU VIC Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    /* font-weight: 200; */
+    font-style: oblique;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    line-height: 30px;
+}
+
+#firstPara {
+    background-color: gold;
+    color: red;
+}
+
+#secondPara {
+    background-color: rgb(123, 79, 189);
+    color: hsl(111, 86%, 58%);
+}
+
+#thirdPara {
+    background-color: #dd397b;
+    color: rgb(239, 185, 38);
+}
