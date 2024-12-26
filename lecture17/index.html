@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-Property</title>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+        img {
+            margin: 10px;
+        }
+
+        .img2 {
+            /* position: relative;
+            top: 50px;
+            left: 20px; */
+            /* position: absolute;
+            top: 70px;
+            left: 50px; */
+        }
+
+        .img4 {
+            position: fixed;
+        }
+
+        .img3 {
+            position: sticky;
+            top: 60px;
+        }
+
+        .container {
+            height: 1000px;
+            background-color: chocolate;
+            position: relative;
+        }
+
+        .box {
+            height: 500px;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img1.jpg" class="img1" height="152" width="224" alt="IMG 1">
+        <img src="img2.jpg" class="img2" height="152" width="224" alt="IMG 2">
+        <img src="img3.jpg" class="img3" height="152" width="224" alt="IMG 3">
+        <img src="img4.jpg" class="img4" height="152" width="224" alt="IMG 4">
+    </div>
+    <div class="box"></div>
+</body>
+</html>
