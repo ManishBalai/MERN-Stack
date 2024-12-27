@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Size Units</title>
+    <style>
+        .box {
+            border: 1px solid red;
+            width: 30%;
+            margin: 5px auto;
+            text-align: center;
+        }
+
+        .parent {
+            margin: 5px auto;
+            border: 1px solid brown;
+            background-color:burlywood;
+            width: 50%;
+        }
+
+        .child {
+            margin: auto;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            width: 80%;
+        }
+
+        .container {
+            margin: 5px auto;
+            border: 1px solid rgb(252, 33, 51);
+            background-color: rgb(88, 103, 234);
+            height: 20vh;
+            width: 80vw;
+        }
+
+        .heading {
+            font-size: 12px;
+            border: 1px solid gray;
+            margin: 5px auto;
+        }
+
+        .text {
+            text-align: center;
+            font-size: 2em; /* parent - size * whatever value you gived to child */
+        }
+
+        .greeting {
+            text-align: center;
+            font-size: 2rem;
+            border: 1px solid rgb(46, 177, 192);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box.
+    </div>
+
+    <div class="parent">
+        <div class="child">
+            Child
+        </div>
+    </div>
+
+    <div class="container"></div>
+
+    <div class="heading">
+        <div class="text">
+            Hello ji...!
+        </div>
+    </div>
+
+    <div class="greeting">
+            Meri duniya me aapka swagat hai..
+    </div>
+</body>
+</html>
