@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another</title>
+    <style>
+        .container {
+            margin: auto;
+            border: 5px solid green;
+            background-color: darkkhaki;
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            padding: 2px;
+        }
+
+        #boxleft {
+            background-color: cornflowerblue;
+            border: 2px solid black;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+        }
+
+        #boxright {
+            background-color: cornsilk;
+            border: 2px solid black;
+            width: 47%;
+            margin: 3px;
+            padding: 2px;
+        }
+
+        p {
+            border: 1px solid skyblue;
+        }
+
+        img {
+            width: 180px;
+        }
+
+        @media (max-width:640px) {
+            .container {
+                /* display: flex; */
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <p>text 1</p>
+            <p>text 2</p>
+        </div>
+        <div id="boxright">
+            <img src="road.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

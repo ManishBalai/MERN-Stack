@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <style>
+
+        :root {
+            --primary-color: brown;
+        }
+        .container {
+            border: 2px solid black;
+            background-color: rgb(249, 219, 181);
+            height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            background-color: rgb(253, 253, 232);
+            border: 1px solid var(--primary-color);
+            margin: 5px;
+            padding: 5px;
+            height: 75%;
+            width: 75%;
+            text-align: center;
+            /* box-shadow: 10px 10px brown; */
+            /* box-shadow: 10px 10px 10px brown; */
+            /* box-shadow: 10px 15px 7px 5px brown; */
+            /* box-shadow: inset -5px -5px 10px brown; */
+            /* box-shadow: 5px 5px brown,10px 10px rgb(239, 145, 22); */
+        }
+
+        #head {
+            /* text-shadow: 3px 3px 2px var(--primary-color); */
+            /* text-shadow: var(--primary-color) 13px 14px 2px; */
+            /* text-shadow: var(--primary-color) 0px 16px; */
+            /* text-shadow: 14px 14px; */
+            /* text-shadow: 3px 3px 2px red, 6px 6px 2px yellow, 9px 9px 2px blue; */
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="nature.jpg" alt="">
+            <h1 id="head">Gateway to Tranquility: A Sunset Reflection</h1>
+            <p>
+                This breathtaking scene captures the serene beauty of nature as the fiery hues of a setting sun paint the sky and reflect on the still waters below. The wooden dock extends like an invitation into the heart of this peaceful moment, urging you to pause and immerse yourself in the harmony of light and shadow. Nestled between gentle hills, the tranquil lake mirrors the drama of the heavens, creating a perfect balance of vibrant color and calm stillness. This image is a testament to the profound connection between humanity and the natural world, where simplicity and grandeur coexist in perfect harmony.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
