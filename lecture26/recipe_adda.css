@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+}
+
+nav #navList {
+    min-height: 60px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(to right, #485563, #29323c);
+}
+
+#navLogo {
+    font-size: 2rem;
+    color: azure;
+    margin-left: 30px;
+    word-spacing: 5px;
+}
+
+.menu-list a {
+    color: azure;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin: 30px;
+}
+
+section {
+    height: 708px;
+    background: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+.item {
+    height: 708px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.rightBox {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+}
+
+.rightBox img {
+    height: 550px;
+    border-radius: 20px;
+    transition: all 0.5s linear 0s;
+}
+
+.rightBox:hover {
+    transform: scale(1.1);
+}
+
+.rightBox .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: rgba(79, 69, 69, 0.755);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightBox:hover .overlay {
+    opacity: 1;
+}
+
+.rightBox .overlay span {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.leftBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.leftBox h2 {
+    font-size: 2.5rem;
+}
+
+.leftBox h3 {
+    font-size: 2rem;
+}
+
+.ingBox {
+    font-size: 1.3rem;
+}
+
+.head {
+    font-weight: bold;
+}
+.processBox {
+    font-size: 1.3rem;
+} 
+
+hr {
+    border: 2px solid black;
+}
+
+.footerBox {
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to right, #485563, #29323c);
+    min-height: 50px;
+}
+
+.footerBox p {
+    color: azure;
+    font-size: 2rem;
+}
