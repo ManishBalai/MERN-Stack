@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - 8</title>
+    <style>
+        :root {
+            --bg-color: #282c34;
+            --brown-shade: #ff6f61;
+            --dark-orange: #ffa463;
+            --light-orange: #ffc373;
+            --dark-green: #16a085;
+            --light-green: #1abc9c;
+            --lighter-green: #86ecd5;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            height: 100%;
+            width: 100%;
+            background-color: var(--bg-color);
+            display: grid;
+            gap: 1rem;
+            padding: 4rem;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .brown {
+            background-color: var(--brown-shade);
+        }
+
+        .lightorange {
+            background-color: var(--light-orange);
+        }
+
+        .item3 {
+            background-color: var(--lighter-green);
+        }
+
+        .item4 {
+            background-color: var(--light-green);
+        }
+
+        .item5 {
+            background-color: var(--dark-green);
+        }
+
+        .item8 {
+            grid-column: 3/6;
+            background-color: var(--dark-orange);
+        }
+
+        .item9 {
+            grid-column: 1/6;
+            background-color: var(--lighter-green);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="brown"></div>
+        <div class="lightorange"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+        <div class="item5"></div>
+        <div class="lightorange"></div>
+        <div class="brown"></div>
+        <div class="item8"></div>
+        <div class="item9"></div>
+    </div>
+</body>
+
+</html>

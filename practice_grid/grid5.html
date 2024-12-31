@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - 5</title>
+    <style>
+        :root {
+            --bg-color: #282c34;
+            --brown-shade: #ff6f61;
+            --dark-orange: #ffa463;
+            --light-orange: #ffc373;
+            --dark-green: #2ecc71;
+            --little-green: #1abc9c;
+            --light-green: #16a085;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            gap: 1rem;
+            padding: 4rem;
+            background-color: var(--bg-color);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        .item {
+            background-color: white;
+        }
+
+        .brown {
+            background-color: var(--brown-shade);
+        }
+
+        .lightorange {
+            background-color: var(--dark-orange);
+        }
+
+        .lighterorange {
+            background-color: var(--light-orange);
+        }
+
+        .darkgreen {
+            background-color: var(--dark-green);
+        }
+
+        .lightgreen {
+            background-color: var(--light-green);
+        }
+
+        .lightergreen {
+            background-color: var(--little-green);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="darkgreen"></div>
+        <div class="lightorange"></div>
+        <div class="lightgreen"></div>
+        <div class="brown"></div>
+        <div class="lightergreen"></div>
+        <div class="lightorange"></div>
+        <div class="lighterorange"></div>
+        <div class="darkgreen"></div>
+        <div class="lightorange"></div>
+        <div class="lightgreen"></div>
+        <div class="lighterorange"></div>
+        <div class="brown"></div>
+        <div class="darkgreen"></div>
+        <div class="brown"></div>
+        <div class="lightergreen"></div>
+        <div class="lightorange"></div>
+        <div class="darkgreen"></div>
+        <div class="lightergreen"></div>
+    </div>
+</body>
+</html>
