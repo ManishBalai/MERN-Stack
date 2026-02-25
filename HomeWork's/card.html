@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 90%;
+            margin: 10px auto;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .card-content {
+            padding: 2px 15px 15px 15px;
+        }
+
+        .card-content h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        .current {
+            color: #007bff;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .original {
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        .off {
+            background-color: #1ad789;
+            color: white;
+            font-size: 12px;
+            padding: 4px 8px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img src="images/image.webp" alt="Course thumbnail" />
+
+        <div class="card-content">
+            <h2>Web Development Master Course @dot Batch</h2>
+
+            <div class="price">
+                <span class="current">₹4500</span>
+                <span class="original">₹6999</span>
+                <span class="off">42% off</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
