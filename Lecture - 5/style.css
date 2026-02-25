@@ -1,0 +1,45 @@
+* {
+    text-align: center;
+}
+
+p {
+    color: rgb(221, 61, 61);
+    font-size: 25px;
+}
+
+h2 {
+    background-color: rgb(221, 61, 61);
+}
+
+.chocolate {
+    background-color: chocolate;
+    color: aliceblue;
+}
+
+.brown {
+    background-color: brown;
+    color: beige;
+}
+
+#btn {
+    color: brown;
+    background-color: burlywood;
+    border: none;
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#fav {
+    background-color: darkred;
+    color: floralwhite;
+    font-size: 24px;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+
+#btn:hover {
+    background-color: chocolate;
+    color: black;
+}
