@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container {
+    background-color: #F3F4F6;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 60px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #777C85;
+    line-height: 20px;
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover{
+    color: #4E5DC0;
+}
+
+.nav-links a::after{
+    content:"";
+    display:block;
+    width:0;
+    height:2px;
+    background:#4E5DC0;
+    transition:0.3s;
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.btn {
+    width: 165px;
+    height: 54px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background-color: #4E5DC0;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+}
+
+.about {
+    padding: 100px 60px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-left {
+    max-width: 500px;
+}
+
+.about-left h2 {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 100%;
+    color: #16171C;
+    margin-bottom: 10px;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 122,
+        "slnt" 0,
+        "XTRA" 603,
+        "XOPQ" 96,
+        "YOPQ" 100,
+        "YTLC" 514,
+        "YTUC" 712,
+        "YTAS" 750,
+        "YTDE" -203,
+        "YTFI" 738;
+}
+
+.underline {
+    width: 215px;
+    height: 2px;
+    background-color: #777C85;
+    margin-bottom: 25px;
+}
+
+.about-right img,
+.ceo-left img{
+    display:block;
+}
+
+.about-left p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #777C85;
+    margin-bottom: 20px;
+}
+
+.about-right img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 30px;
+}
+
+.ceo {
+    padding: 100px 60px;
+}
+
+.ceo-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.ceo-right {
+    max-width: 500px;
+}
+
+.ceo-right h2 {
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 100%;
+    color: #16171C;
+    margin-bottom: 10px;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 122,
+        "slnt" 0,
+        "XTRA" 603,
+        "XOPQ" 96,
+        "YOPQ" 100,
+        "YTLC" 514,
+        "YTUC" 712,
+        "YTAS" 750,
+        "YTDE" -203,
+        "YTFI" 738;
+}
+
+.ceo-right p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    color: #777C85;
+    margin-bottom: 20px;
+}
+
+.ceo-left img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 480px;
+    border-radius: 30px;
+}
+
+hr {
+    border: 1.5px solid #E1E2E4;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap:60px;
+    background-color: #FFFFFF;
+    padding: 60px 60px;
+}
+
+.logo-heading {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #4E5DC0;
+}
+
+.footer-content span {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #999999;
+}
+
+.adress-heading, .email h2, .menu h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #4E5DC0;
+}
+
+.adress-content, .email span, .menu ul {
+    font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #999999;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.social-media {
+    max-width: 48px;
+    max-height: 160px;
+}
