@@ -1,0 +1,25 @@
+.linear {
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(lightblue, blue);
+    background: linear-gradient(to right,lightblue, blue);
+    background: linear-gradient(to left, lightblue, blue);
+    background: linear-gradient(to bottom, lightblue, blue);
+}
+
+.radial {
+    border: 1px solid black;
+    margin-top: 5px;
+    height: 200px;
+    width: 200px;
+    background-image: radial-gradient(black, silver);
+}
+
+.conic {
+    border: 1px solid black;
+    margin-top: 5px;
+    height: 200px;
+    width: 200px;
+    background: conic-gradient(rgb(227, 88, 88), rgb(240, 240, 75), rgb(94, 122, 221));
+}

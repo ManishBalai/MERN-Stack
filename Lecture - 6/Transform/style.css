@@ -1,0 +1,11 @@
+.container {
+    border: 1px solid black;
+    height: 25px;
+    width: 100px;
+    margin: 50px 200px;
+    background-color: burlywood;
+    /* transform: translate(25px, 25px); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(1.5); */
+    transform: skew(45deg);
+}
