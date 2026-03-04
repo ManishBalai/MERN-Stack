@@ -1,0 +1,33 @@
+.container {
+    height: 500px;
+    display: flex;
+    gap: 5px;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.box {
+    border: 2px solid brown;
+    background-color: rgb(225, 98, 98);
+}
+
+#box1 {
+    order: 1;
+    align-self: flex-start;
+    /* flex-grow: 1; */
+}
+
+#box3 {
+    order: 3;
+    align-self: flex-end;
+    /* flex-grow: 1; */
+    flex-shrink: 4;
+}
+
+#box4 {
+    order: 2;
+}
